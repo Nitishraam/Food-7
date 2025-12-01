@@ -801,6 +801,9 @@ nav {
     left: -21px;
     padding: 10px;
   }
+    .overlay h1{
+    line-height: 45px;
+  }
 
 }
 @media (max-width: 1130px) {
@@ -827,6 +830,9 @@ nav {
    .mb-logo a{
           align-items: center;
     font-size: 12px;
+  }
+  .overlay h1{
+    line-height: 45px;
   }
 }
 /* Remove mobile side gap */
