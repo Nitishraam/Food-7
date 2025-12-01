@@ -150,6 +150,47 @@ nav {
   background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
+.top-about {
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+}
+
+.top-img {
+  width: 100%;
+  height: 500px;
+  color: white;
+  filter: brightness(30%);
+  /* object-fit: contain; */
+}
+.overlay h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Roboto Slab;
+  color: white;
+}
+.overlay .breadcrumb {
+  font-size: 16px;
+  opacity: 0.9;
+  font-family: Roboto Slab;
+
+  color: white;
+}
+
+.breadcrumb span {
+  font-family: Roboto Slab;
+  font-size: 20px;
+}
+.overlay .breadcrumb .home-icon {
+  margin-right: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
 
 /* --------- TOP HERO SECTION --------- */
 .top-hero {
@@ -404,7 +445,7 @@ nav {
 .section-inner { max-width: 1100px; margin: 0 auto; }
 
 /* muted helper */
-.muted { color: #555; margin-bottom: 14px;text-align: center; }
+.muted { color: #383838; margin-bottom: 14px;text-align: center; }
 .small-muted { color: #777; font-size: 13px; margin-top: 8px; }
 
 /* common button styles */
@@ -588,7 +629,7 @@ nav {
   font-size: 16px;
 }
 
-.muted { color: #c9cedf; font-size: 14px; }
+.muted { color: #383838; font-size: 14px; }
 .small { font-size: 13px; opacity: 0.9; }
 
 /* divider */
