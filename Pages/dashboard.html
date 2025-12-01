@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./dashboard.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+      <!-- Chart.js CDN (v4+) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+       <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="../index.html"
+                  >Home</a>
+                  <i
+                    onclick="menu2.hidden^=1"
+                    class="fa-solid fa-caret-down"
+                  ></i
+                >
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a   href="./blog.html">Blogs</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a style="color: #ec1628"  href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./index.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+    
+        </div>
+         <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+      </div>
+    </div>
+    <nav> 
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a   href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a  style="color: #ec1628" href="./dashboard.html">Dashboard</a></li>
+          </ul>
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="../Images/tb.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>DASHBOARD</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Dashboard</span></span>
+        </p>
+      </div>
+    </div>
+
+
+      <div class="wrap">
+    <div class="top">
+      <div class="title">
+        <h1>Sales Dashboard</h1>
+        <p class="smalltxt">Overview of last 12 months — interactive mockup (HTML/CSS)</p>
+      </div>
+      <div class="smalltxt">Updated just now</div>
+    </div>
+
+    <div class="grid">
+
+      <!-- Stats row -->
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Total Income</div>
+          <div class="value">$12,890.00</div>
+          <div class="smalltxt">Compared to last month</div>
+        </div>
+
+        <div class="stat">
+          <div class="label">Income</div>
+          <div class="value">$4,345.00</div>
+          <div style="margin-top:8px"><span class="pill">+8%</span> <span class="smalltxt" style="margin-left:8px">vs previous</span></div>
+        </div>
+
+        <div class="stat">
+          <div class="label">Expense</div>
+          <div class="value">$2,890.00</div>
+          <div style="margin-top:8px"><span style="color:var(--red);font-weight:700;">-4%</span> <span class="smalltxt" style="margin-left:8px">vs previous</span></div>
+        </div>
+      </div>
+
+      <!-- Left column -->
+      <div class="left">
+      
+
+        <div class="card">
+          <h3>Order Rate</h3>
+          <div class="chart-wrap">
+            <!-- simple SVG line-area chart -->
+            <svg viewBox="0 0 800 220" preserveAspectRatio="none" role="img" aria-label="Line chart">
+              <!-- grid -->
+              <defs>
+                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#bfe9ff" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="100%" height="100%" fill="none"/>
+              <!-- area -->
+              <path d="M0,160 C80,120 160,110 240,140 C320,170 400,130 480,90 C560,70 640,110 800,80 L800 220 L0 220 Z"
+                    fill="url(#area)" stroke="none"/>
+              <!-- line -->
+              <path d="M0,160 C80,120 160,110 240,140 C320,170 400,130 480,90 C560,70 640,110 800,80"
+                    fill="none" stroke="#2494ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- small markers -->
+              <g fill="#fff" stroke="#2494ff" stroke-width="2">
+                <circle cx="240" cy="140" r="4"/>
+                <circle cx="480" cy="90" r="4"/>
+                <circle cx="560" cy="70" r="4"/>
+              </g>
+            </svg>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div class="stat-mini">
+              <div class="smalltxt">Orders</div>
+              <div class="num">25,307</div>
+            </div>
+            <div class="stat-mini">
+              <div class="smalltxt">Target</div>
+              <div class="num">3,982</div>
+            </div>
+            <div class="stat-mini">
+              <div class="smalltxt">New Users</div>
+              <div class="num">1,324</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="right">
+        <div class="card">
+          <h3>Quick KPIs</h3>
+          <div class="kpis" style="margin-top:8px">
+            <div class="kpi"><div><small>Total Order Completed</small><div><strong>2,678</strong></div></div><div class="muted">↗︎</div></div>
+            <div class="kpi"><div><small>Total Order Delivered</small><div><strong>1,234</strong></div></div><div class="muted">↗︎</div></div>
+            <div class="kpi"><div><small>Total Order Cancelled</small><div><strong>123</strong></div></div><div class="muted">↘︎</div></div>
+            <div class="kpi"><div><small>Order Pending</small><div><strong>432</strong></div></div><div class="muted">↗︎</div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Popular Food</h3>
+          <div class="donut" style="margin-top:6px">
+            <!-- simple donut using stroke-dasharray -->
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <circle cx="18" cy="18" r="15.91549430918954" fill="none" stroke="#eee" stroke-width="6"/>
+              <!-- slice 1 -->
+              <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#ff8a00" stroke-width="6"
+                      stroke-dasharray="30 70" stroke-dashoffset="25" transform="rotate(-90 18 18)"/>
+              <!-- slice 2 -->
+              <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#2494ff" stroke-width="6"
+                      stroke-dasharray="25 75" stroke-dashoffset="-5" transform="rotate(-90 18 18)"/>
+              <!-- slice 3 -->
+              <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#37b24d" stroke-width="6"
+                      stroke-dasharray="18 82" stroke-dashoffset="-35" transform="rotate(-90 18 18)"/>
+              <text x="18" y="20.6" text-anchor="middle" font-size="4.0" fill="#122">64%</text>
+            </svg>
+
+            <div class="legend">
+              <div><strong>Legend</strong></div>
+              <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;background:#ff8a00;border-radius:3px;display:inline-block"></span> Asian Food <span class="muted" style="margin-left:auto">763</span></div>
+              <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;background:#2494ff;border-radius:3px;display:inline-block"></span> Fast Food <span class="muted" style="margin-left:auto">542</span></div>
+              <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;background:#37b24d;border-radius:3px;display:inline-block"></span> Local Food <span class="muted" style="margin-left:auto">301</span></div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+
+    </div>
+  </div>
+
+   <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- LEFT: About + newsletter -->
+      <div class="col about">
+        <h3>About</h3>
+        <p>
+          There are many variations of passages of Lorem Ip available,
+          but the majority have
+        </p>
+
+        <form
+            class="ft-subscribe"
+            action="./error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+       <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+      </div>
+
+  
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="dot">🌐</span>
+            <div>
+              <div class="muted">stackly@gmail.com</div>
+              <div class="muted small">www.stackly.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="dot">📍</span>
+            <div>
+              <div class="muted">Chinna Thiruppathi,Salem</div>
+              <div class="muted small">Tamil nadu,India</div>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="emergency">
+            <div class="phone-icon">📞</div>
+            <div class="emerg-text">
+              <div class="muted small">Emergency call</div>
+              <div class="phone-number">+91 78912 43598</div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+         <!-- RIGHT: Explore links -->
+      <div class="col explore">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+      </div>
+
+     
+
+    </div>
+     <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+    <div class="footer-bottom">
+      <p>© All Copyright 2024 </p>
+    </div>
+  </footer>
+
+
+
+
+
+ <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service2.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+     <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="./home2.html"
+                  >Home</a>
+                  <i
+                    onclick="menu2.hidden^=1"
+                    class="fa-solid fa-caret-down"
+                  ></i
+                >
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a href="./about2.html">About</a></li>
+              <li><a style="color: #ec1628"  href="./service2.html">Service</a></li>
+              <!-- <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+    
+        </div>
+         <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+      </div>
+    </div>
+    <nav> 
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a  href="./about2.html">About</a></li>
+            <li><a style="color: #ec1628" href="./service2.html">Service</a></li>
+            <!-- <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li> -->
+          </ul>
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="top-about">
+      <img
+        class="top-img"
+        src="../Images/tb.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>SERVICE</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Service</span></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ====== SERVICE PAGE 2 CENTER CONTENT START ====== -->
+
+<!-- 1. Top Intro / Hero -->
+<section class="svc2-hero">
+  <div class="svc2-hero-inner">
+    <h1 class="red">Premium Services for Every Need</h1>
+    <p class="muted">From everyday orders to corporate catering — reliable, fast, and customizable.</p>
+    <div class="svc2-hero-actions">
+      <a href="./error.html" class="btn-primary">Explore Services</a>
+      <a href="./error.html" class="btn-outline">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Service Highlights (icon cards) -->
+<section id="services" class="svc2-highlights">
+  <h2 class="red">What We Offer</h2>
+  <div class="svc2-grid">
+    <div class="svc-card">
+      <div class="svc-icon">🍽️</div>
+      <h3 class="red">Order & Delivery</h3>
+      <p>Seamless online ordering with secure payments and fast delivery tracking.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon">🏢</div>
+      <h3 class="red">Corporate Catering</h3>
+      <p>Custom menus, bulk discounts, and professional on-site service for events.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon">🧑‍🍳</div>
+      <h3 class="red">Chef Services</h3>
+      <p>On-demand chef-led live kitchens or private chef bookings for special events.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon">📦</div>
+      <h3 class="red">Subscription Meal Plans</h3>
+      <p>Weekly/monthly plans for individuals and offices — healthy, balanced, convenient.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Deep-dive Service Panels (image + content) -->
+<section class="svc2-detail">
+  <div class="svc2-detail-inner">
+    <article class="svc-detail-card">
+      <div class="svc-detail-img">
+        <img src="../Images/s2.webp" alt="Catering event">
+      </div>
+      <div class="svc-detail-body">
+        <h3 class="red">Corporate Catering & Events</h3>
+        <p class="muted">Custom menus for conferences, team lunches, and celebrations.</p>
+        <ul class="svc-list">
+          <li>Menu planning with diet options (vegan, gluten-free)</li>
+          <li>On-site setup, service staff & timely delivery</li>
+          <li>Billing & invoicing support for companies</li>
+        </ul>
+        <a href="./error.html" class="btn-secondary">Request Quote</a>
+      </div>
+    </article>
+
+    <article class="svc-detail-card reverse">
+      <div class="svc-detail-img">
+        <img src="../Images/s3.webp" alt="Subscription meals">
+      </div>
+      <div class="svc-detail-body">
+        <h3 class="red">Subscription Meal Plans</h3>
+        <p class="muted">Healthy weekly or monthly meal plans crafted by our nutrition team.</p>
+        <ul class="svc-list">
+          <li>Flexible plans: 3/5/7 meals per week</li>
+          <li>Pause, skip or customize anytime</li>
+          <li>Nutrition info & calorie breakdown provided</li>
+        </ul>
+        <a href="./error.html" class="btn-secondary">Start a Plan</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 4. How We Work (3 steps) -->
+<section class="svc2-process">
+  <h2 class="red">How It Works</h2>
+  <div class="proc-steps">
+    <div class="proc-step">
+      <div class="proc-num">1</div>
+      <h4 class="red">Plan</h4>
+      <p>Choose service, date and preferred menu.</p>
+    </div>
+    <div class="proc-step">
+      <div class="proc-num">2</div>
+      <h4 class="red">Confirm</h4>
+      <p>Approve menu, guest count and delivery details.</p>
+    </div>
+    <div class="proc-step">
+      <div class="proc-num">3</div>
+      <h4 class="red">Enjoy</h4>
+      <p>We prepare, deliver, and ensure a smooth experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FAQ + Contact CTA -->
+<section id="contact" class="svc2-faq-cta">
+  <div class="svc2-faq">
+    <h3 class="red">FAQ</h3>
+    <details>
+      <summary><strong class="red">Do you offer tasting sessions?</strong></summary>
+      <p>Yes — for large catering orders we arrange a tasting (charges may apply and are refundable on confirmation).</p>
+    </details>
+
+    <details>
+      <summary><strong class="red">Can we customize menus for dietary needs?</strong></summary>
+      <p>Absolutely — we provide veg, vegan, gluten-free and other custom options on request.</p>
+    </details>
+
+    <details>
+      <summary><strong class="red">What are your cancellation terms?</strong></summary>
+      <p>Cancellations made 48+ hours before the event receive a full refund; shorter notice may incur charges.</p>
+    </details>
+  </div>
+
+
+</section>
+
+<!-- ====== SERVICE PAGE 2 CENTER CONTENT END ====== -->
+
+
+
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- LEFT: About + newsletter -->
+      <div class="col about">
+        <h3>About</h3>
+        <p>
+          There are many variations of passages of Lorem Ip available,
+          but the majority have
+        </p>
+
+        <form
+            class="ft-subscribe"
+            action="./error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+       <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+      </div>
+
+  
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="dot">🌐</span>
+            <div>
+              <div class="muted">stackly@gmail.com</div>
+              <div class="muted small">www.stackly.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="dot">📍</span>
+            <div>
+              <div class="muted">Chinna Thiruppathi,Salem</div>
+              <div class="muted small">Tamil nadu,India</div>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="emergency">
+            <div class="phone-icon">📞</div>
+            <div class="emerg-text">
+              <div class="muted small">Emergency call</div>
+              <div class="phone-number">+91 78912 43598</div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+         <!-- RIGHT: Explore links -->
+      <div class="col explore">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./service2.html">Service</a></li>
+          <li><a href="./login2.html">Login</a></li>
+          <!-- <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li> -->
+        </ul>
+      </div>
+      </div>
+
+     
+
+    </div>
+     <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+    <div class="footer-bottom">
+      <p>© All Copyright 2024 </p>
+    </div>
+  </footer>
+
+
+
+
+
+ <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+
+    
+
+
+
+
+</body>
+</html>

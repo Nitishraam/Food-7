@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #aaeba3, #75f770);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+    position: relative;
+}
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+   background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #0a74da;
+  box-shadow: 0 0 6px rgba(10, 116, 218, 0.2);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.forgot-link {
+  text-decoration: none;
+  color: #0c1ae4;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  text-decoration: none;
+  padding: 8px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   background: linear-gradient(to right, #7bb6f9, #023a7a);
+  color: black;
+}
+
+.btn:hover {
+  background: white;
+  color: blue;
+  border: 1px solid rgb(117, 145, 235);
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #0c1ae4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+   font-size: 26px;
+  color: #e4250c;
+}
