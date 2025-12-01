@@ -804,7 +804,9 @@ nav {
     .overlay h1{
     line-height: 45px;
   }
-
+  .overlay{
+    left: 0%;
+  }
 }
 @media (max-width: 1130px) {
   .menu-list2 {
