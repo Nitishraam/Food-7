@@ -193,7 +193,7 @@ nav {
 }
 
 .red { color: red;text-align: center; }
-.muted { color: #555; }
+.muted { color: #696868; }
 
 /* ---------- TOP HERO ---------- */
 .about-hero {
@@ -486,7 +486,7 @@ nav {
   font-size: 16px;
 }
 
-.muted { color: #383838; font-size: 14px; }
+.muted1 { color: #bababa; font-size: 14px; }
 .small { font-size: 13px; opacity: 0.9; }
 
 /* divider */
