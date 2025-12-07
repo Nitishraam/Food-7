@@ -36,50 +36,46 @@
         <h2>Welcome</h2>
         <p class="subtitle">Sign up to your Shopping account</p>
 
-        <form action="./error.html" method="get">
-          <div class="input-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
+  <form action="./error.html" method="get" onsubmit="return checkPassword()">
+  <div class="input-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+  </div>
 
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password" required />
+  </div>
 
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Re-Enter your password"
-              required
-            />
-          </div>
-          <!-- 
-        <div class="options">
-          <label>
-            <input type="checkbox"> Remember me
-          </label>
-          <a href="./error.html" class="forgot-link">Forgot Password?</a>
-        </div> -->
+  <div class="input-group">
+    <label for="repassword">Re-Enter Password</label>
+    <input type="password" id="repassword" placeholder="Re-Enter your password" required />
+  </div>
 
-          <input type="submit" value="Sign up" class="btn" />
+  <p id="error-msg" style="color: red; display: none;">Passwords do not match!</p>
 
-          <p class="signup-text">
-            You have an account? <a href="./login2.html">Log in</a>
-          </p>
-        </form>
+  <input type="submit" value="Sign up" class="btn" />
+
+  <p class="signup-text">
+    You have an account? <a href="./login.html">Log in</a>
+  </p>
+</form>
+
+<script>
+  function checkPassword() {
+    let pass = document.getElementById("password").value;
+    let repass = document.getElementById("repassword").value;
+    let error = document.getElementById("error-msg");
+
+    if (pass !== repass) {
+      error.style.display = "block"; // show error message
+      return false; // STOP form submission
+    }
+
+    error.style.display = "none";
+    return true; // allow submit → goes to error.html
+  }
+</script>
       </div>
     </div>
     <script>
