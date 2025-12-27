@@ -5,35 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./home2.css">
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
-      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
 </head>
 <body>
-      <div class="mb">
+   <div class="mb">
       <div class="mb-main">
         <div class="menu-btn">
           <svg
@@ -55,7 +33,7 @@
           <div hidden id="menu">
             <ul class="menu-list">
               <li>
-                <a  style="color: #ec1628" href="./home2.html"
+                <a  style="color: #ec1628"  href="./home2.html"
                   >Home</a>
                   <i
                     onclick="menu2.hidden^=1"
@@ -94,7 +72,7 @@
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a style="color: #ec1628"  href="./home2.html">Home</a
+                <a style="color: #ec1628" href="./home2.html">Home</a
                 ><i
                   onclick="menu3.hidden^=1"
                   class="fa-solid fa-caret-down"
@@ -116,8 +94,8 @@
                 </div>
               </li>
             </div>
-            <li><a href="./about2.html">About</a></li>
-            <li><a href="./service2.html">Service</a></li>
+            <li><a  href="./about2.html">About</a></li>
+            <li><a  href="./service2.html">Service</a></li>
             <!-- <li><a href="./blog2.html">Blogs</a></li>
             <li><a href="./contact2.html">Contact</a></li>
             <li><a href="./dashboard2.html">Dashboard</a></li> -->
@@ -128,294 +106,466 @@
         </div>
       </div>
     </nav>
+    <!-- HERO BANNER (UNCHANGED) -->
     <div class="top-about">
-      <img
-        class="top-img"
-        src="../Images/th2.webp"
-        alt=""
-      />
-
-      <div data-aos="zoom-in" class="overlay">
-        <h1>HOME</h1>
-        <p class="breadcrumb">
-          <span class="home-icon">🏠Home / <span>Home</span></span>
-        </p>
-      </div>
-    </div>
-
-    <!-- ========== HOMEPAGE 2 CENTER CONTENT START ========== -->
-
-<!-- 1. Hero Intro -->
-<section data-aos="fade-up" class="home2-hero">
-  <h1 class="red">Fresh Food. Fast Delivery.</h1>
-  <p class="muted1">Your cravings delivered hot and delicious ● Anytime ● Anywhere</p>
-  <a href="./error.html" class="home2-cta">Order Now</a>
-</section>
-
-<!-- 2. Features -->
-<section data-aos="zoom-in" class="home2-features">
-  <div class="feature-box">
-    <div class="f-icon">⏱️</div>
-    <h3 class="red">Delivery Under 30min</h3>
-    <p>Quick and reliable, every single time.</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="f-icon">🥗</div>
-    <h3 class="red">Healthy Choices</h3>
-    <p>Fresh veggies, hygienic kitchen & clean cooking.</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="f-icon">🔥</div>
-    <h3 class="red">Hot & Fresh</h3>
-    <p>Your order reaches you perfectly packed & steaming hot.</p>
-  </div>
-</section>
-
-<!-- 3. Image + Content -->
-<section data-aos="zoom-out" class="home2-about">
-  <div class="home2-about-img">
-    <img src="../Images/h1.webp" alt="Fresh Ingredients">
-  </div>
-  <div class="home2-about-content">
-    <h2 class="red">Made With Care</h2>
-    <p>
-      Every dish is crafted using high-quality ingredients and traditional methods.
-      Our chefs ensure each meal is cooked with passion and freshness.
-    </p>
-    <ul>
-      <li>Daily fresh vegetables</li>
-      <li>No added preservatives</li>
-      <li>Authentic flavors & spices</li>
-      <li>Clean kitchen protocols</li>
-    </ul>
-    <a href="./error.html" class="home2-btn">Learn More</a>
-  </div>
-</section>
-
-<!-- 4. Customer Highlights -->
-<section data-aos="fade-up" class="home2-highlights">
-  <h2 class="red">Why Customers Love Us</h2>
-  <div class="highlight-grid">
-
-    <div class="highlight-card">
-      <img src="../Images/h3.webp" alt="Customer Favorite">
-      <h4 class="red">Top Rated Taste</h4>
-      <p>Over 10,000+ happy customers and consistent 5-star reviews.</p>
-    </div>
-
-    <div class="highlight-card">
-      <img src="../Images/h2.webp" alt="Fast Delivery">
-      <h4 class="red">Lightning Delivery</h4>
-      <p>Fastest delivery in the city with real-time tracking.</p>
-    </div>
-
-    <div class="highlight-card">
-      <img src="../Images/h4.webp" alt="Eco Friendly">
-      <h4 class="red">Eco-Friendly</h4>
-      <p>Biodegradable packaging that keeps your meal safe & fresh.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- 5. Final CTA -->
-<section  data-aos="fade-up" class="home2-final-cta">
-  <h2 class="red">Ready to Taste the Best?</h2>
-  <p class="muted1">Order your first meal today and enjoy freshness delivered fast.</p>
-  <a href="./error.html" class="home2-order-btn">Start Ordering</a>
-</section>
-
-<!-- ========== HOMEPAGE 2 CENTER CONTENT END ========== -->
-
-<!-- ===== EXTRA SECTION A: CHEF'S SPOTLIGHT (Image Left) ===== -->
-<section  data-aos="zoom-out" class="extra-section extra-chef">
-  <div class="extra-inner">
-    <div class="extra-img">
-      <img src="../Images/h5.webp" alt="Chef preparing special dish">
-    </div>
-    <div class="extra-content">
-      <h2 class="red">Chef’s Spotlight: Weekly Special</h2>
-      <p class="muted1">Handpicked by our head chef — a seasonal creation using fresh local produce.</p>
-      <p>Every week our chef crafts a limited-time dish that highlights seasonal flavors and unique spice blends. Perfect for special occasions or when you want to try something new.</p>
-      <ul class="extra-list">
-        <li><strong class="red">Limited edition</strong> — available while stocks last</li>
-        <li>Made with locally sourced ingredients</li>
-        <li>Comes with a complimentary side</li>
-      </ul>
-      <a href="./error.html" class="extra-btn">See This Week's Special</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== EXTRA SECTION B: INGREDIENTS STORY (Image Right) ===== -->
-<section data-aos="fade-up" class="extra-section extra-ingredients">
-  <div class="extra-inner reverse">
-    <div class="extra-img">
-      <img src="../Images/h6.webp" alt="Fresh vegetables and spices">
-    </div>
-    <div class="extra-content">
-      <h2 class="red">From Farm to Fork</h2>
-      <p class="muted1">We partner with local farmers to bring the freshest produce straight to your plate.</p>
-      <p>Quality starts at the source. Our seasonal sourcing program ensures better taste, supports local communities, and reduces food miles.</p>
-      <div class="ingredient-grid">
-        <div class="ing-card">
-          <h4 class="red">Locally Sourced</h4>
-          <p>Fresh daily from nearby farms.</p>
+        <img class="top-img" src="../Images/th2.webp" alt=""/>
+        <div data-aos="zoom-in" class="overlay">
+            <h1>HOME</h1>
+            <p class="breadcrumb">
+                <span class="home-icon">🏠Home / <span>Home</span></span>
+            </p>
         </div>
-        <div class="ing-card">
-          <h4 class="red">Seasonal Picks</h4>
-          <p>Menus rotate to highlight the best produce.</p>
-        </div>
-        <div class="ing-card">
-          <h4 class="red">Traceability</h4>
-          <p>Know where your food comes from.</p>
-        </div>
-      </div>
-      <a href="./error.html" class="extra-btn">Learn About Our Suppliers</a>
     </div>
-  </div>
+
+
+    <!-- 2. Floating Features -->
+    <section class="floating-features" data-aos="fade-up">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card float-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Delivery Under 30min</h3>
+                    <p>Quick and reliable, every single time.</p>
+                </div>
+                <div class="feature-card float-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🥗</div>
+                    <h3>Healthy Choices</h3>
+                    <p>Fresh veggies, hygienic kitchen & clean cooking.</p>
+                </div>
+                <div class="feature-card float-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Hot & Fresh</h3>
+                    <p>Your order reaches you perfectly packed & steaming hot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Split Content with Scroll Reveal -->
+    <section class="split-section" data-aos="fade-up">
+        <div class="container">
+            <div class="split-content">
+                <div class="split-text" data-aos="fade-right">
+                    <h2 class="section-title">Made With <span class="gradient-text">Care</span></h2>
+                    <p>Every dish is crafted using high-quality ingredients and traditional methods. Our chefs ensure each meal is cooked with passion and freshness.</p>
+                    <ul class="checklist">
+                        <li><i class="fas fa-check"></i> Daily fresh vegetables</li>
+                        <li><i class="fas fa-check"></i> No added preservatives</li>
+                        <li><i class="fas fa-check"></i> Authentic flavors & spices</li>
+                        <li><i class="fas fa-check"></i> Clean kitchen protocols</li>
+                    </ul>
+                    <a href="./error.html" class="cta-btn slide-btn">Learn More</a>
+                </div>
+                <div class="split-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="../Images/h1.webp" alt="Fresh Ingredients"/>
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Staggered Cards -->
+    <section class="stagger-grid" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title center-title">Why Customers <span class="gradient-text">Love Us</span></h2>
+            <div class="cards-grid">
+                <div class="stagger-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="../Images/h3.webp" alt="Customer Favorite"/>
+                    </div>
+                    <div class="card-content">
+                        <h4>Top Rated Taste</h4>
+                        <p>Over 10,000+ happy customers and consistent 5-star reviews.</p>
+                    </div>
+                </div>
+                <div class="stagger-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="../Images/h2.webp" alt="Fast Delivery"/>
+                    </div>
+                    <div class="card-content">
+                        <h4>Lightning Delivery</h4>
+                        <p>Fastest delivery in the city with real-time tracking.</p>
+                    </div>
+                </div>
+                <div class="stagger-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="../Images/h4.webp" alt="Eco Friendly"/>
+                    </div>
+                    <div class="card-content">
+                        <h4>Eco-Friendly</h4>
+                        <p>Biodegradable packaging that keeps your meal safe & fresh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Chef Spotlight (NEW DESIGN) -->
+    <section class="chef-spotlight" data-aos="fade-up">
+        <div class="container">
+            <div class="spotlight-content">
+                <div class="spotlight-image" data-aos="fade-right">
+                    <img src="../Images/h5.webp" alt="Chef preparing special dish"/>
+                    <div class="badge">Weekly Special</div>
+                </div>
+                <div class="spotlight-text" data-aos="fade-left">
+                    <h2 class="section-title">Chef's <span class="gradient-text">Spotlight</span></h2>
+                    <p class="subtitle">Handpicked by our head chef — a seasonal creation using fresh local produce.</p>
+                    <p>Every week our chef crafts a limited-time dish that highlights seasonal flavors and unique spice blends. Perfect for special occasions or when you want to try something new.</p>
+                    <ul class="feature-list">
+                        <li><strong>Limited edition</strong> — available while stocks last</li>
+                        <li>Made with locally sourced ingredients</li>
+                        <li>Comes with a complimentary side</li>
+                    </ul>
+                    <a href="./error.html" class="cta-btn glow-btn">See This Week's Special</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- 8. STATS COUNTER - Number Roll Animation -->
+<section class="stats-counter" data-aos="zoom-in">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Happy Customers</div>
+                <div class="stat-icon">😋</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Orders Delivered</div>
+                <div class="stat-icon">🚚</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-number" data-target="98">0</div>
+                <div class="stat-label">% Satisfaction</div>
+                <div class="stat-icon">⭐</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-number" data-target="30">0</div>
+                <div class="stat-label">Min Delivery</div>
+                <div class="stat-icon">⏱️</div>
+            </div>
+        </div>
+        <a href="./error.html" class="stats-cta bounce-btn">Join 10K+ Happy Customers</a>
+    </div>
 </section>
 
+<!-- 9. TESTIMONIAL SLIDER - Floating Cards -->
+<section class="testimonials" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title center-title">What Our <span class="gradient-text">Customers Say</span></h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card active" data-aos="fade-up">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Best food delivery I've ever used! Food arrives hot and fresh every time. The biryani is absolutely restaurant quality!"</p>
+                <div class="customer-info">
+                    <img src="../Images/h4.webp" alt="Priya S." class="customer-avatar"/>
+                    <div>
+                        <h5>Priya Sharma</h5>
+                        <span>Chennai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Lightning fast delivery and amazing taste. Their packaging keeps everything perfect. Highly recommended!"</p>
+                <div class="customer-info">
+                    <img src="../Images/h5.webp" alt="Rahul K." class="customer-avatar"/>
+                    <div>
+                        <h5>Rahul Kumar</h5>
+                        <span>Bangalore</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Love their healthy options! Fresh ingredients and no preservatives. Perfect for my diet plan."</p>
+                <div class="customer-info">
+                    <img src="../Images/h6.webp" alt="Anita M." class="customer-avatar"/>
+                    <div>
+                        <h5>Anita Mishra</h5>
+                        <span>Mumbai</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- 10. APP PROMO - Device Mockup -->
+<section class="app-promo" data-aos="fade-up">
+    <div class="container">
+        <div class="app-content">
+            <div class="app-text" data-aos="fade-right">
+                <h2 class="section-title">Order From Our <span class="gradient-text">Mobile App</span></h2>
+                <p>Download our app for exclusive discounts, real-time tracking, and lightning-fast ordering.</p>
+                <ul class="app-features">
+                    <li><i class="fas fa-bolt"></i> 10% off first order</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Live GPS tracking</li>
+                    <li><i class="fas fa-clock"></i> Schedule future orders</li>
+                    <li><i class="fas fa-gift"></i> Daily exclusive deals</li>
+                </ul>
+                <div class="app-buttons">
+                    <a href="./error.html" class="app-btn playstore">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                    <a href="./error.html" class="app-btn appstore">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store</span>
+                    </a>
+                </div>
+            </div>
+            <div class="app-mockup" data-aos="fade-left">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <img src="../Images/h2.webp" alt="App Mockup"/>
+                        <div class="app-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- 11. POPULAR COMBOS - Product Grid with Cart/Buy -->
+<section class="product-grid" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title center-title">Popular <span class="gradient-text">Combos</span></h2>
+        <p class="section-subtitle">Mix & match your favorites - Best value meals!</p>
+        <div class="products-grid">
+            <div class="product-card" data-aos="flip-up" data-aos-delay="100">
+                <div class="product-image">
+                    <img src="../Images/h1.webp" alt="Biryani Combo"/>
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-actions">
+                        <a href="./error.html" class="action-btn cart-btn" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="action-btn buy-btn" href="./error.html">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Biryani Family Combo</h4>
+                    <p>Chicken Biryani + Raita + Salad + Dessert for 4</p>
+                    <div class="product-price">
+                        <span class="new-price">₹799</span>
+                        <span class="old-price">₹999</span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="product-card" data-aos="flip-up" data-aos-delay="200">
+                <div class="product-image">
+                    <img src="../Images/h2.webp" alt="Thali Combo"/>
+                    <div class="product-badge hot">20% OFF</div>
+                     <div class="product-actions">
+                        <a href="./error.html" class="action-btn cart-btn" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="action-btn buy-btn" href="./error.html">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Vegetarian Thali</h4>
+                    <p>3 Curries + Dal + Rice + Roti + Sweets</p>
+                    <div class="product-price">
+                        <span class="new-price">₹299</span>
+                        <span class="old-price">₹399</span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="product-card" data-aos="flip-up" data-aos-delay="300">
+                <div class="product-image">
+                    <img src="../Images/h3.webp" alt="Non-Veg Platter"/>
+                      <div class="product-actions">
+                        <a href="./error.html" class="action-btn cart-btn" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="action-btn buy-btn" href="./error.html">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Non-Veg BBQ Platter</h4>
+                    <p>Chicken Tikka + Fish + Kebab + Mint Chutney</p>
+                    <div class="product-price">
+                        <span class="new-price">₹649</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-aos="flip-up" data-aos-delay="400">
+                <div class="product-image">
+                    <img src="../Images/h4.webp" alt="Dessert Combo"/>
+                    <div class="product-badge">New</div>
+                       <div class="product-actions">
+                        <a href="./error.html" class="action-btn cart-btn" onclick="addToCart(this)">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="action-btn buy-btn" href="./error.html">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h4>Dessert Feast</h4>
+                    <p>Gulab Jamun + Rasmalai + Falooda (Serves 2)</p>
+                    <div class="product-price">
+                        <span class="new-price">₹199</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-btn">
+            <a href="./error.html" class="cta-btn mega-btn">View Full Menu</a>
+        </div>
+    </div>
+</section>
+
+<!-- 12. HOW IT WORKS - Stepper Animation -->
+<section class="how-it-works" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title center-title">How It <span class="gradient-text">Works</span></h2>
+        <p class="section-subtitle">3 simple steps to delicious food at your doorstep</p>
+        <div class="steps-container">
+            <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Choose Your Meal</h4>
+                    <p>Browse our menu and add your favorites to cart</p>
+                </div>
+            </div>
+            <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Quick Checkout</h4>
+                    <p>Enter delivery details and pay securely online</p>
+                </div>
+            </div>
+            <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Hot Delivery</h4>
+                    <p>Track your order live and enjoy hot food in 30 mins!</p>
+                </div>
+            </div>
+        </div>
+        <!-- ✅ CENTER WRAPPER ADDED -->
+        <div class="button-center">
+            <a href="./error.html" class="cta-btn pulse-cta">Order Now - It's That Easy!</a>
+        </div>
+    </div>
+</section>
+
+    <!-- 6. Final CTA with particles -->
+    <section class="final-cta" data-aos="fade-up">
+        <div class="cta-container">
+            <h2>Ready to Taste the <span class="gradient-text">Best?</span></h2>
+            <p>Order your first meal today and enjoy freshness delivered fast.</p>
+            <a href="./error.html" class="mega-cta">Start Ordering</a>
+        </div>
+    </section>
+
+    <!-- YOUR ORIGINAL FOOTER (UNCHANGED) -->
     <footer class="site-footer">
-    <div class="footer-inner">
-
-      <!-- LEFT: About + newsletter -->
-      <div class="col about">
-        <h3>About</h3>
-        <p>
-          There are many variations of passages of Lorem Ip available,
-          but the majority have
-        </p>
-
-        <form
-            class="ft-subscribe"
-            action="./error.html"
-            method="GET"
-            aria-label="Subscribe form"
-          >
-            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
-            <input
-              id="ft-email"
-              class="ft-input"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              required
-            />
-            <button class="ft-send" type="submit" aria-label="Subscribe">
-              ➜
-            </button>
-          </form>
-
-       <div class="ft-social">
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-telegram"></i
-            ></a>
-          </div>
-      </div>
-
-  
-
-        <div class="contact-list">
-          <div class="contact-item">
-            <span class="dot">🌐</span>
-            <div>
-              <div class="muted">stackly@gmail.com</div>
-              <div class="muted small">www.stackly.com</div>
+        <div class="footer-inner">
+            <div class="col about">
+                <h3>About</h3>
+                <p>There are many variations of passages of Lorem Ip available, but the majority have</p>
+                <form class="ft-subscribe" action="./error.html" method="GET" aria-label="Subscribe form">
+                    <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required/>
+                    <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
+                </form>
+                <div class="ft-social">
+                    <a href="./error.html" class="s"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-telegram"></i></a>
+                </div>
             </div>
-          </div>
-
-          <div class="contact-item">
-            <span class="dot">📍</span>
-            <div>
-              <div class="muted">Chinna Thiruppathi,Salem</div>
-              <div class="muted small">Tamil nadu,India</div>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <span class="dot">🌐</span>
+                    <div>
+                        <div class="muted">stackly@gmail.com</div>
+                        <div class="muted small">www.stackly.com</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="dot">📍</span>
+                    <div>
+                        <div class="muted">Chinna Thiruppathi,Salem</div>
+                        <div class="muted small">Tamil nadu,India</div>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="emergency">
+                    <div class="phone-icon">📞</div>
+                    <div class="emerg-text">
+                        <div class="muted small">Emergency call</div>
+                        <div class="phone-number">+91 78912 43598</div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <hr class="divider">
-
-          <div class="emergency">
-            <div class="phone-icon">📞</div>
-            <div class="emerg-text">
-              <div class="muted small">Emergency call</div>
-              <div class="phone-number">+91 78912 43598</div>
+            <div class="col explore">
+                <h3>Quick Links</h3>
+                <ul class="links">
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./service2.html">Service</a></li>
+                    <li><a href="./login2.html">Login</a></li>
+                </ul>
             </div>
-          </div>
-
-          
         </div>
+        <div class="ft-map" aria-hidden="false">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin" width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-bottom">
+            <p>© All Copyright 2024 </p>
+        </div>
+    </footer>
 
+    <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.hidden = !menu.hidden;
+        }
 
-         <!-- RIGHT: Explore links -->
-      <div class="col explore">
-        <h3>Quick Links</h3>
-        <ul class="links">
-          <li><a href="./home2.html">Home</a></li>
-          <li><a href="./about2.html">About</a></li>
-          <li><a href="./service2.html">Service</a></li>
-          <li><a href="./login2.html">Login</a></li>
-          <!-- <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./dashboard.html">Dashboard</a></li> -->
-        </ul>
-      </div>
-      </div>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            easing: 'ease-out-cubic'
+        });
 
-     
+        // Floating animation
+        function floatElements() {
+            const floats = document.querySelectorAll('.float-1, .float-2, .float-3');
+            floats.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+        }
+        floatElements();
 
-    </div>
-     <div class="ft-map" aria-hidden="false">
-        <!-- Replace the src with the map/location you want.
-               This is an embeddable Google Maps example for New York.
-               If you prefer another provider, replace the iframe accordingly. -->
-        <iframe
-          class="map1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-          width="100%"
-          height="150"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
-      </div>
-
-    <div class="footer-bottom">
-      <p>© All Copyright 2024 </p>
-    </div>
-  </footer>
-
-
-
-
-
- <script>
-      // $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 650,
-        once: false,
-        mirror: true,
-      });
+        // Mouse move parallax
+        document.addEventListener('mousemove', (e) => {
+            const parallax = document.querySelector('.parallax-hero');
+            const x = (window.innerWidth - e.pageX * 2) / 25;
+            const y = (window.innerHeight - e.pageY * 2) / 25;
+            parallax.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
     </script>
-
-
-
 </body>
 </html>

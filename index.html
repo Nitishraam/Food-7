@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly</title>
     <link rel="stylesheet" href="./style.css">
-     <link
+   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -33,56 +33,34 @@
     ></script>
 </head>
 <body>
-     <div class="mb">
+    <!-- YOUR ORIGINAL NAV - UNCHANGED -->
+    <div class="mb">
       <div class="mb-main">
-        <div class="menu-btn">
-          <svg
-            onclick="menu.hidden^=1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-            height="24"
-            width="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-
-          <div hidden id="menu">
-            <ul class="menu-list">
-              <li>
-                <a style="color: #ec1628"  href="./index.html"
-                  >Home</a>
-                  <i
-                    onclick="menu2.hidden^=1"
-                    class="fa-solid fa-caret-down"
-                  ></i
-                >
-                <div id="menu2" hidden>
-                  <a href="./Pages/home2.html">Home2</a>
-                </div>
-              </li>
-              <li><a href="./Pages/about.html">About</a></li>
-              <li><a href="./Pages/service.html">Service</a></li>
-              <li><a href="./Pages/blog.html">Blogs</a></li>
-              <li><a href="./Pages/contact.html">Contact</a></li>
-              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="mb-logo">
-          <a href="./index.html" style="display: flex; align-items: center">
-            <img src="./Images/logo.webp" alt="" />
-          </a>
-    
-        </div>
-         <a class="login2" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
+       <div class="menu-btn">
+         <svg onclick="menu.hidden^=1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" height="24" width="24">
+           <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+         </svg>
+         <div hidden id="menu">
+           <ul class="menu-list">
+             <li>
+               <a style="color: #ec1628" href="./index.html">Home</a>
+               <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+               <div id="menu2" hidden><a href="./Pages/home2.html">Home2</a></div>
+             </li>
+             <li><a href="./Pages/about.html">About</a></li>
+             <li><a href="./Pages/service.html">Service</a></li>
+             <li><a href="./Pages/blog.html">Blogs</a></li>
+             <li><a href="./Pages/contact.html">Contact</a></li>
+             <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="mb-logo">
+         <a href="./index.html" style="display: flex; align-items: center">
+           <img src="./Images/logo.webp" alt="" />
+         </a>
+       </div>
+        <a class="login2" href="./Pages/login.html"><i class="fa-solid fa-user"></i>Log in</a>
       </div>
     </div>
     <nav> 
@@ -94,25 +72,10 @@
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a style="color: #ec1628" href="./index.html">Home</a
-                ><i
-                  onclick="menu3.hidden^=1"
-                  class="fa-solid fa-caret-down"
-                ></i>
-                <div
-                  style="position: absolute; top: 25px; background-color: white"
-                >
-                  <a
-                    href="./Pages/home2.html"
-                    style="
-                      background-color: white;
-                      border: 1px solid black;
-                      padding: 4px;
-                    "
-                    id="menu3"
-                    hidden
-                    >Home2</a
-                  >
+                <a style="color: #ec1628" href="./index.html">Home</a>
+                <i onclick="menu3.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div style="position: absolute; top: 25px; background-color: white">
+                  <a href="./Pages/home2.html" style="background-color: white; border: 1px solid black; padding: 4px;" id="menu3" hidden>Home2</a>
                 </div>
               </li>
             </div>
@@ -122,405 +85,645 @@
             <li><a href="./Pages/contact.html">Contact</a></li>
             <li><a href="./Pages/dashboard.html">Dashboard</a></li>
           </ul>
-          <a class="login" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
+          <a class="login" href="./Pages/login.html"><i class="fa-solid fa-user"></i>Log in</a>
         </div>
       </div>
     </nav>
 
-   <div class="top-about">
-      <img
-        class="top-img"
-        src="./Images/th.webp"
-        alt=""
-      />
-
-      <div data-aos="zoom-in" class="overlay">
-     <div class="top-hero-content">
-    <h1 class="red hero-big-title">Taste The Best Food In Town</h1>
-    <p class="hero-sub">
-      Fresh • Tasty • Fast — Delivered to your doorstep  
-    </p>
-
-    <div class="hero-actions">
-      <a href="./Pages/about.html" class="hero-btn red-btn">Explore Menu</a>
-      <a href="./Pages/error.html" class="hero-btn outline-btn">Order Now</a>
-    </div>
-
-  </div>
-      </div>
-    </div>
-
-
-
-    <!-- ========== CENTER CONTENT START ========== -->
-<section data-aos="fade-up" class="hero-center">
-  <h1 class="red">Delicious Meals, Delivered Fresh</h1>
-  <p><strong class="red">Fresh</strong> • <strong class="red">Tasty</strong> • <strong class="red">Fast</strong></p>
-</section>
-
-<section data-aos="zoom-in" class="product-section">
-  <h2 class="red">Popular Dishes</h2>
-
-  <div class="product-grid">
-
-    <!-- PRODUCT 1 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f1.webp" alt="Food 1">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
+    <!-- MODERN HERO SECTION -->
+    <section class="modern-hero" data-aos="fade-in">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+          <span>Fresh • Tasty • Fast</span>
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+          Taste The Best Food <span class="gradient-text">In Town</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+          Delivered to your doorstep
+        </p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+          <a href="./Pages/error.html" class="btn-primary">Explore Menu</a>
+          <a href="./Pages/error.html" class="btn-outline">Order Now</a>
         </div>
       </div>
-      <div class="product-info">
-        <h3 class="red">Chicken Biryani</h3>
-        <p>Aromatic rice cooked with juicy chicken & spices.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
 
-    <!-- PRODUCT 2 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f2.webp" alt="Food 2">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
+    </section>
+
+    <!-- ====== 1. FEATURES HIGHLIGHTS ====== -->
+<section class="features-section" data-aos="fade-up">
+  <div class="container">
+    <div class="features-wrapper">
+      <div class="features-content" data-aos="fade-right">
+        <div class="section-header">
+          <h2 class="gradient-text">Why Choose Us?</h2>
+          <p class="muted">Experience food delivery like never before</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>Delivered in under 30 minutes. Hot & fresh every time.</p>
+          </div>
+          <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>100% Fresh</h3>
+            <p>Locally sourced ingredients. Prepared fresh daily.</p>
+          </div>
+          <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Safe & Hygienic</h3>
+            <p>Contactless delivery with strict hygiene standards.</p>
+          </div>
         </div>
       </div>
-      <div class="product-info">
-        <h3 class="red">Veg Pizza</h3>
-        <p>Cheesy thin crust with fresh garden toppings.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 3 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f3.webp" alt="Food 3">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
+      <div class="features-image" data-aos="fade-left">
+        <div class="feature-mockup">
+          <img src="./Images/f5.webp" alt="Fast Delivery" class="main-food">
+          <div class="floating-card">
+            <img src="./Images/f1.webp" alt="Biryani">
+          </div>
+          <div class="floating-card delay-1">
+            <img src="./Images/f3.webp" alt="Paneer">
+          </div>
+          <div class="floating-card delay-2">
+            <img src="./Images/f2.webp" alt="Pizza">
+          </div>
         </div>
       </div>
-      <div class="product-info">
-        <h3 class="red">Paneer Tikka</h3>
-        <p>Smoky grilled paneer marinated in spices.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 4 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f4.webp" alt="Food 4">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <h3 class="red">Brownie</h3>
-        <p>Warm chocolate brownie with vanilla scoop.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 5 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f5.webp" alt="Food 5">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <h3 class="red">Butter Chicken</h3>
-        <p>Creamy gravy with soft chicken pieces.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 6 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f6.webp" alt="Food 6">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <h3 class="red">Schezwan Noodles</h3>
-        <p>Hot & spicy Indo-Chinese noodles.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 7 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f7.webp" alt="Food 7">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <h3 class="red">Caesar Salad</h3>
-        <p>Fresh veggies with creamy dressing.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-    <!-- PRODUCT 8 -->
-    <div class="product-card">
-      <div class="product-img">
-        <img src="./Images/f8.webp" alt="Food 8">
-        <div class="hover-icons">
-          <a href="./Pages/error.html">❤️</a>
-          <a href="./Pages/error.html">🛒</a>
-        </div>
-      </div>
-      <div class="product-info">
-        <h3 class="red">Mango Lassi</h3>
-        <p>Refreshing mango yogurt drink.</p>
-        <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- ========== CENTER CONTENT END ========== -->
-
-<!-- ====== 1. SPECIALS / OFFERS ====== -->
-<section data-aos="fade-up" id="specials" class="section specials-section">
-  <div class="section-inner">
-    <h2 class="red">Chef Specials & Offers</h2>
-    <p class="muted">Limited time <strong class="red">discounts</strong> and weekly chef picks.</p>
-
-    <div class="specials-grid">
-      <article class="special-card">
-        <img src="./Images/f9.webp" alt="Special 1">
-        <div class="special-body">
-          <h3 class="red">Weekend Biryani Feast</h3>
-          <p>Buy 1 get 1 half off on selected biryanis. <span class="red">Today only</span>.</p>
-          <a href="./Pages/error.html" class="btn-small">Order Now</a>
-        </div>
-      </article>
-
-      <article class="special-card">
-        <img src="./Images/f10.webp" alt="Special 2">
-        <div class="special-body">
-          <h3 class="red">Family Combo</h3>
-          <p>Family combo for 4 — includes starters, mains & dessert. <span class="red">Save 20%</span>.</p>
-          <a href="./Pages/error.html" class="btn-small">Get Combo</a>
-        </div>
-      </article>
-
-      <article class="special-card">
-        <img src="./Images/f11.webp" alt="Special 3">
-        <div class="special-body">
-          <h3 class="red">Midweek Quick Bites</h3>
-          <p>Flat ₹50 off on orders above ₹299. Use code <strong class="red">QUICK50</strong>.</p>
-          <a href="./Pages/error.html" class="btn-small">Apply Offer</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ====== 2. ABOUT US ====== -->
-<section  data-aos="zoom-out" id="about" class="section about-section">
-  <div class="section-inner">
-    <h2 class="red">About Us</h2>
-    <p class="muted">We are a family-run kitchen serving <strong class="red">authentic</strong> flavors since 2015.</p>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <p>At <strong class="red">FoodHouse</strong>, we focus on fresh ingredients, sustainable sourcing, and fast delivery.
-        Our chefs craft seasonal menus and every dish is prepared with attention to detail.</p>
-
-        <ul class="about-list">
-          <li><strong class="red">Locally sourced</strong> vegetables & meats</li>
-          <li>No artificial preservatives</li>
-          <li><strong class="red">Hygiene</strong> and contactless delivery</li>
-        </ul>
-      </div>
-
-      <div class="about-image">
-        <img src="./Images/f12.webp" alt="Our Chef">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ====== 3. TESTIMONIALS ====== -->
-<section  data-aos="zoom-in" id="testimonials" class="section testimonials-section">
-  <div class="section-inner">
-    <h2 class="red">What Customers Say</h2>
-    <p class="muted">Real reviews from happy customers.</p>
-
-    <div class="testimonials-grid">
-      <blockquote class="testimonial">
-        <p class="quote">“Amazing biryani — the flavors are spot on. Delivery was fast and packaging was perfect.”</p>
-        <cite>— Priya R.</cite>
-      </blockquote>
-
-      <blockquote class="testimonial">
-        <p class="quote">“The family combo saved our weekend dinner. Highly recommend!”</p>
-        <cite>— Rahul M.</cite>
-      </blockquote>
-
-      <blockquote class="testimonial">
-        <p class="quote">“Fresh, tasty and great portion sizes. Will order again.”</p>
-        <cite>— Anjali S.</cite>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- ====== 4. GALLERY ====== -->
-<section  data-aos="fade-up" id="gallery" class="section gallery-section">
-  <div class="section-inner">
-    <h2 class="red">Gallery</h2>
-    <p class="muted">A peek at our delicious dishes and happy moments.</p>
-
-    <div class="gallery-grid" aria-hidden="false">
-      <img src="./Images/f15.webp" alt="Food gallery 1">
-      <img src="./Images/f16.webp" alt="Food gallery 2">
-      <img src="./Images/f17.webp" alt="Food gallery 3">
-      <img src="./Images/f18.webp" alt="Food gallery 4">
     </div>
   </div>
 </section>
 
 
 
+    <!-- DELICIOUS MEALS SECTION -->
+    <section class="meals-section" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="gradient-text">Delicious Meals, Delivered Fresh</h2>
+          <p><strong class="accent">Fresh</strong> • <strong class="accent">Tasty</strong> • <strong class="accent">Fast</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR DISHES -->
+    <section class="dishes-section" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <h2 class="gradient-text">Popular Dishes</h2>
+          <p>Our top picks you can't miss</p>
+        </div>
+        <div class="dishes-grid">
+          <div class="dish-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="dish-image">
+              <img src="./Images/f1.webp" alt="Chicken Biryani">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Chicken Biryani</h3>
+              <p>Aromatic rice cooked with juicy chicken & spices</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card featured" data-aos="fade-up" data-aos-delay="200">
+            <span class="featured-badge">Chef's Pick</span>
+            <div class="dish-image">
+              <img src="./Images/f2.webp" alt="Veg Pizza">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Veg Pizza</h3>
+              <p>Cheesy thin crust with fresh garden toppings</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="dish-image">
+              <img src="./Images/f3.webp" alt="Paneer Tikka">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Paneer Tikka</h3>
+              <p>Smoky grilled paneer marinated in spices</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="dish-image">
+              <img src="./Images/f4.webp" alt="Brownie">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Brownie</h3>
+              <p>Warm chocolate brownie with vanilla scoop</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="dish-image">
+              <img src="./Images/f5.webp" alt="Butter Chicken">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Butter Chicken</h3>
+              <p>Creamy gravy with soft chicken pieces</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="dish-image">
+              <img src="./Images/f6.webp" alt="Schezwan Noodles">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Schezwan Noodles</h3>
+              <p>Hot & spicy Indo-Chinese noodles</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="dish-image">
+              <img src="./Images/f7.webp" alt="Caesar Salad">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Caesar Salad</h3>
+              <p>Fresh veggies with creamy dressing</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="dish-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="dish-image">
+              <img src="./Images/f8.webp" alt="Mango Lassi">
+              <div class="dish-overlay">
+                <div class="dish-actions">
+                  <button class="action-btn"><i class="fas fa-heart"></i></button>
+                  <button class="action-btn"><i class="fas fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="dish-info">
+              <h3>Mango Lassi</h3>
+              <p>Refreshing mango yogurt drink</p>
+              <a href="./Pages/error.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEF SPECIALS -->
+    <section class="specials-section" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down">
+          <h2 class="gradient-text">Chef Specials & Offers</h2>
+          <p class="muted">Limited time <strong class="accent">discounts</strong> and weekly chef picks</p>
+        </div>
+        <div class="specials-grid">
+          <article class="special-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./Images/f9.webp" alt="Weekend Biryani Feast">
+            <div class="special-body">
+              <h3>Weekend Biryani Feast</h3>
+              <p>Buy 1 get 1 half off on selected biryanis. <span class="accent">Today only</span>.</p>
+              <a href="./Pages/error.html" class="btn-small">Order Now</a>
+            </div>
+          </article>
+
+          <article class="special-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./Images/f10.webp" alt="Family Combo">
+            <div class="special-body">
+              <h3>Family Combo</h3>
+              <p>Family combo for 4 — includes starters, mains & dessert. <span class="accent">Save 20%</span>.</p>
+              <a href="./Pages/error.html" class="btn-small">Get Combo</a>
+            </div>
+          </article>
+
+          <article class="special-card" data-aos="zoom-in" data-aos-delay="500">
+            <img src="./Images/f11.webp" alt="Midweek Quick Bites">
+            <div class="special-body">
+              <h3>Midweek Quick Bites</h3>
+              <p>Flat ₹50 off on orders above ₹299. Use code <strong class="accent">QUICK50</strong>.</p>
+              <a href="./Pages/error.html" class="btn-small">Apply Offer</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about-section" data-aos="zoom-out">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2 class="gradient-text">About Us</h2>
+            <p class="muted">We are a family-run kitchen serving <strong class="accent">authentic</strong> flavors since 2015</p>
+          </div>
+          <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+              <p>At <strong class="accent">FoodHouse</strong>, we focus on fresh ingredients, sustainable sourcing, and fast delivery. Our chefs craft seasonal menus and every dish is prepared with attention to detail.</p>
+              <ul class="about-list">
+                <li><i class="fas fa-leaf"></i><strong class="accent">Locally sourced</strong> vegetables & meats</li>
+                <li><i class="fas fa-shield-alt"></i>No artificial preservatives</li>
+                <li><i class="fas fa-shipping-fast"></i><strong class="accent">Hygiene</strong> and contactless delivery</li>
+              </ul>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+              <img src="./Images/f12.webp" alt="Our Chef">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" data-aos="zoom-in">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2 class="gradient-text">What Customers Say</h2>
+            <p class="muted">Real reviews from happy customers</p>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="testimonial" data-aos="flip-left">
+              <p class="quote">“Amazing biryani — the flavors are spot on. Delivery was fast and packaging was perfect.”</p>
+              <cite>— Priya R.</cite>
+            </blockquote>
+            <blockquote class="testimonial" data-aos="flip-up">
+              <p class="quote">“The family combo saved our weekend dinner. Highly recommend!”</p>
+              <cite>— Rahul M.</cite>
+            </blockquote>
+            <blockquote class="testimonial" data-aos="flip-right">
+              <p class="quote">“Fresh, tasty and great portion sizes. Will order again.”</p>
+              <cite>— Anjali S.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 9. MENU CATEGORIES ====== -->
+<section class="categories-section" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="gradient-text">Explore Categories</h2>
+      <p class="muted">Discover our delicious food categories</p>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="category-icon">
+          <i class="fas fa-drumstick-bite"></i>
+        </div>
+        <h3>Chicken</h3>
+        <p>Juicy & flavorful chicken dishes</p>
+        <span class="category-count">25+</span>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="category-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h3>Vegetarian</h3>
+        <p>Fresh & healthy veggie delights</p>
+        <span class="category-count">18+</span>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="category-icon">
+          <i class="fas fa-birthday-cake"></i>
+        </div>
+        <h3>Desserts</h3>
+        <p>Sweet treats for every mood</p>
+        <span class="category-count">12+</span>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="category-icon">
+          <i class="fas fa-coffee"></i>
+        </div>
+        <h3>Beverages</h3>
+        <p>Refreshing drinks & shakes</p>
+        <span class="category-count">15+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== 10. CHEF TEAM ====== -->
+<section class="team-section" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="gradient-text">Our Master Chefs</h2>
+      <p class="muted">Meet the culinary artists behind our delicious dishes</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-image">
+          <img src="./Images/ap1.webp" alt="Chef Raj">
+          <div class="member-overlay">
+            <div class="social-links">
+              <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+              <a href="./Pages/error.html"><i class="fab fa-twitter"></i></a>
+              <a href="./Pages/error.html"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Chef Raj Kumar</h3>
+          <p>Head Chef • 15+ Years Experience</p>
+          <div class="member-specialty">
+            <span class="specialty-tag">Biryani Expert</span>
+            <span class="specialty-tag">Grill Master</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-member featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-badge">Head Chef</div>
+        <div class="member-image">
+          <img src="./Images/ap2.webp" alt="Chef Priya">
+          <div class="member-overlay">
+            <div class="social-links">
+              <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+              <a href="./Pages/error.html"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Chef Priya Singh</h3>
+          <p>Pastry Chef • Award Winner</p>
+          <div class="member-specialty">
+            <span class="specialty-tag">Dessert Queen</span>
+            <span class="specialty-tag">Bakery Expert</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-image">
+          <img src="./Images/ap3.webp" alt="Chef Amit">
+          <div class="member-overlay">
+            <div class="social-links">
+              <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+              <a href="./Pages/error.html"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>Chef Amit Patel</h3>
+          <p>Chinese Specialist • 10+ Years</p>
+          <div class="member-specialty">
+            <span class="specialty-tag">Noodles Master</span>
+            <span class="specialty-tag">Stir Fry Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ULTIMATE CTA SECTION ====== -->
+<section class="cta-section" data-aos="zoom-in">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-wrapper">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="cta-badge">
+          <i class="fas fa-fire"></i>
+          <span>Hot Right Now</span>
+        </div>
+        <h2 class="gradient-text">Ready to Satisfy Your Cravings?</h2>
+        <p class="cta-subtitle">Join 50K+ happy customers who enjoy fresh meals every day. Limited time offer!</p>
+        
+        <div class="cta-grid">
+          <div class="cta-highlight">
+            <div class="highlight-icon">
+              <i class="fas fa-truck-fast"></i>
+            </div>
+            <div>
+              <strong>30 Min Delivery</strong>
+              <span>Guaranteed or FREE</span>
+            </div>
+          </div>
+          <div class="cta-highlight">
+            <div class="highlight-icon">
+              <i class="fas fa-percent"></i>
+            </div>
+            <div>
+              <strong>20% Cashback</strong>
+              <span>On first 3 orders</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="./Pages/error.html" class="btn-primary cta-main">
+            <i class="fas fa-shopping-cart"></i>
+            Order Now
+          </a>
+          <a href="./Pages/error.html" class="btn-outline cta-secondary">
+            View Menu
+          </a>
+        </div>
+      </div>
+      
+      <div class="cta-visuals" data-aos="fade-left">
+        <div class="food-plate">
+          <img src="./Images/f1.webp" alt="Biryani Plate" class="plate-main">
+          <div class="plate-spices">
+            <div class="spice-1"></div>
+            <div class="spice-2"></div>
+            <div class="spice-3"></div>
+          </div>
+        </div>
+        <div class="cta-stats">
+          <div class="stat-circle">
+            <span class="stat-number">50K+</span>
+            <span>Customers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== NEWSLETTER + PARTNERS ====== -->
+<section class="newsletter-section" data-aos="fade-up">
+  <div class="container">
+    <div class="newsletter-wrapper">
+      <!-- Newsletter Signup -->
+      <div class="newsletter-content" data-aos="zoom-in">
+        <div class="newsletter-badge">
+          <i class="fas fa-envelope"></i>
+          <span>Exclusive Offers</span>
+        </div>
+        <h2 class="gradient-text">Get 10% OFF Your First Order</h2>
+        <p class="newsletter-subtitle">Subscribe to our newsletter for delicious recipes, exclusive discounts & new menu alerts!</p>
+        
+        <form class="newsletter-form" action="./Pages/error.html">
+          <div class="form-group">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">
+              <i class="fas fa-paper-plane"></i>
+              Subscribe
+            </button>
+          </div>
+         
+        </form>
+        
+        <div class="newsletter-trust">
+          <i class="fas fa-lock"></i>
+          <span>100% Secure. We respect your privacy</span>
+        </div>
+      </div>
+      
+      <!-- Partners Logos -->
+      <div class="partners-section" data-aos="fade-left">
+        <h3 class="partners-title">Payment Partners</h3>
+        <div class="partners-grid">
+          <div class="partner-logo paypal">
+            <i class="fab fa-paypal"></i>
+          </div>
+          <div class="partner-logo stripe">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="partner-logo razorpay">
+            <span>Razorpay</span>
+          </div>
+          <div class="partner-logo upi">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="partner-logo cod">
+            <span>COD</span>
+          </div>
+        </div>
+        
+        <div class="partners-stats">
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span>Support</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span>Safe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- YOUR ORIGINAL FOOTER - UNCHANGED -->
     <footer class="site-footer">
     <div class="footer-inner">
-
-      <!-- LEFT: About + newsletter -->
       <div class="col about">
         <h3>About</h3>
-        <p>
-          There are many variations of passages of Lorem Ip available,
-          but the majority have
-        </p>
-
-        <form
-            class="ft-subscribe"
-            action="./Pages/error.html"
-            method="GET"
-            aria-label="Subscribe form"
-          >
-            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
-            <input
-              id="ft-email"
-              class="ft-input"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              required
-            />
-            <button class="ft-send" type="submit" aria-label="Subscribe">
-              ➜
-            </button>
-          </form>
-
-       <div class="ft-social">
-            <a href="./Pages/error.html" class="s">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="./Pages/error.html" class="s">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="./Pages/error.html" class="s">
-              <i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="./Pages/error.html" class="s">
-              <i class="fa-brands fa-telegram"></i
-            ></a>
-          </div>
-      </div>
-
-  
-
-        <div class="contact-list">
-          <div class="contact-item">
-            <span class="dot">🌐</span>
-            <div>
-              <div class="muted1">stackly@gmail.com</div>
-              <div class="muted1 small">www.stackly.com</div>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span class="dot">📍</span>
-            <div>
-              <div class="muted1">Chinna Thiruppathi,Salem</div>
-              <div class="muted1 small">Tamil nadu,India</div>
-            </div>
-          </div>
-
-          <hr class="divider">
-
-          <div class="emergency">
-            <div class="phone-icon">📞</div>
-            <div class="emerg-text">
-              <div class="muted1 small">Emergency call</div>
-              <div class="phone-number">+91 78912 43598</div>
-            </div>
-          </div>
-
-          
+        <p style="color: rgb(233, 222, 222);">There are many variations of passages of Lorem Ip available, but the majority have</p>
+        <form class="ft-subscribe" action="./Pages/error.html" method="GET" aria-label="Subscribe form">
+          <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required />
+          <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
+        </form>
+        <div class="ft-social">
+          <a href="./Pages/error.html" class="s"><i class="fa-brands fa-instagram"></i></a>
+          <a href="./Pages/error.html" class="s"><i class="fa-brands fa-facebook"></i></a>
+          <a href="./Pages/error.html" class="s"><i class="fa-brands fa-twitter"></i></a>
+          <a href="./Pages/error.html" class="s"><i class="fa-brands fa-telegram"></i></a>
         </div>
-
-
-         <!-- RIGHT: Explore links -->
-      <div class="col explore">
-        <h3>Quick Links</h3>
-        <ul class="links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./Pages/about.html">About</a></li>
-          <li><a href="./Pages/service.html">Service</a></li>
-          <li><a href="./Pages/blog.html">Blog</a></li>
-          <li><a href="./Pages/contact.html">Contact</a></li>
-          <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-        </ul>
-      </div>
       </div>
 
-     
+      <div class="contact-list">
+         <div class="contact-item">
+           <span class="dot">🌐</span>
+           <div>
+             <div class="muted1">stackly@gmail.com</div>
+             <div class="muted1 small">www.stackly.com</div>
+           </div>
+         </div>
+         <div class="contact-item">
+           <span class="dot">📍</span>
+           <div>
+             <div class="muted1">Chinna Thiruppathi,Salem</div>
+             <div class="muted1 small">Tamil nadu,India</div>
+           </div>
+         </div>
+         <hr class="divider">
+         <div class="emergency">
+           <div class="phone-icon">📞</div>
+           <div class="emerg-text">
+             <div class="muted1 small">Emergency call</div>
+             <div class="phone-number">+91 78912 43598</div>
+           </div>
+         </div>
+       </div>
 
-    </div>
-     <div class="ft-map" aria-hidden="false">
-        <!-- Replace the src with the map/location you want.
-               This is an embeddable Google Maps example for New York.
-               If you prefer another provider, replace the iframe accordingly. -->
-        <iframe
-          class="map1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-          width="100%"
-          height="150"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
+       <div class="col explore">
+         <h3>Quick Links</h3>
+         <ul class="links">
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="./Pages/about.html">About</a></li>
+           <li><a href="./Pages/service.html">Service</a></li>
+           <li><a href="./Pages/blog.html">Blog</a></li>
+           <li><a href="./Pages/contact.html">Contact</a></li>
+           <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+         </ul>
+       </div>
       </div>
+      <div class="ft-map" aria-hidden="false">
+        <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin" width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer-bottom">
+        <p>© All Copyright 2024</p>
+      </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <p>© All Copyright 2024 </p>
-    </div>
-  </footer>
 
-
- <script>
+     <script>
       // $(document).on('ready', function () {
       // initialization of aos
       AOS.init({
@@ -529,7 +732,5 @@
         mirror: true,
       });
     </script>
-
-    
 </body>
 </html>
